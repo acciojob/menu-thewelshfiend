@@ -2,7 +2,7 @@ import React from 'react'
 
 const Card = ({key, item}) => {
     return (
-        <div className='card' data-test-id={item.category === 'breakfast' ? 'menu-item-breakfast' : item.category === 'lunch' ? 'menu-item-lunch' : 'enu-item-shakes'}>
+        <div className='card' data-test-id={item.category === 'breakfast' ? 'menu-item-breakfast' : item.category === 'lunch' ? 'menu-item-lunch' : 'menu-item-shakes'}>
             <div className='card-img'>
                 <img src={item.img} alt="Broken" />
             </div>
