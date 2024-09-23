@@ -97,14 +97,14 @@ function App()
     const [updatedList, dispatch] = useReducer(filterReducer, data);
 
     return (
-        <div id='app'>
+        <div id='main'>
             <h1>Our Menu</h1>
             <hr width='5%' size='5' color='#c59d5f'/>
             <div id='btn-container'>
                 <button onClick={() => dispatch({type: 'ALL'})}>All</button>
-                <button onClick={() => dispatch({type: 'BREAKFAST'})}>Breakfast</button>
-                <button onClick={() => dispatch({type: 'LUNCH'})}>Lunch</button>
-                <button onClick={() => dispatch({type: 'SHAKES'})}>Shakes</button>
+                <button id='filter-btn-1' onClick={() => dispatch({type: 'BREAKFAST'})}>Breakfast</button>
+                <button id='filter-btn-2' onClick={() => dispatch({type: 'LUNCH'})}>Lunch</button>
+                <button id='filter-btn-3' onClick={() => dispatch({type: 'SHAKES'})}>Shakes</button>
             </div>
             <div id='menu'>
                 {
